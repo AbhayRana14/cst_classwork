@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <button onclick="func()">Hide</button>
+    <button onclick="func2()">Show</button>
+    <script>
+    function func(){
+        var x=document.getElementsByTagName("p");
+        for(var i=0;i<3;i++)
+        x[i].style.display="none";
+    }
+    function func2(){
+        var x=document.getElementsByTagName("p");
+        for(var i=0;i<3;i++)
+        x[i].style.display="block";
+    }
+    </script>
+    </body>
+</html>

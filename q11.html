@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul id="l1">
+            <li>List1 Item1</li>
+            <li>List1 Item2</li>
+            <li>List1 Item3</li>
+            <li>List1 Item4</li>
+        </ul>
+        <ul id="l2">
+            <li>List2 Item1</li>
+            <li>List2 Item2</li>
+            <li>List2 Item3</li>
+            <li>List2 Item4</li>
+        </ul>
+        <button onclick="func()">Click Here</button>
+        <script>
+        function func(){
+            var x = document.getElementById("l1").getElementsByTagName("li");
+            var y=document.createElement("li");
+            var text=document.createTextNode(x[0].innerText);
+            y.appendChild(text);
+            var parent=document.getElementById("l2");
+            parent.append(y);
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>This is para 1</p>
+        <p>second para</p>
+        <p>all paragraph are used to be displayed in the alert.</p>
+        <button onclick="func()">Alert</button>
+        <script>
+        function func(){
+            var x=document.getElementsByTagName("p");
+            var txt="";
+            txt+=x[0].innerText+" ";
+            txt+=x[1].innerText+" ";
+            txt+=x[2].innerText+" ";
+            alert(txt);
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquerry</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .block1{
+            border-style: solid;
+
+            padding: 50px;
+        }
+        .block2{
+            border-style: solid;
+
+          background-color: #f5f5f5;
+        }
+        .btn1{
+            background-color: #1b1b1d;
+            color: #FFFFFF;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div2").remove();
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="block1" id="div1">
+    <div class="block2" id="div2">
+
+        <h1>List of Components</h1>
+        <ul>
+            <li>Processor</li>
+            <li>Mouse</li>
+            <li>CPU</li>
+        </ul>
+
+    </div>
+    <button class="btn1" type="button">Empty the div element</button>
+</div>
+</body>
+</html>

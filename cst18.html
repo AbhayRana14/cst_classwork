@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1 id="demo">THIS IS H1 ELEMENT</h1>
+
+        <h2 id="demo2">This is H2 ELEMENT</h2>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $("#demo").mouseover(function(){
+                $("#demo2").after("<p>this is p element</p>");
+
+            });
+        });
+    </script>
+</body>
+</html>

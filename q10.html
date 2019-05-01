@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <ul>
+           <li>Item 1</li>
+           <li>Item 2</li>
+           <li>Item 3</li>
+           <li>Item 4</li>
+       </ul>
+       <button onclick="change()">Change Items</button>
+       <script>
+        function change(){
+            var x=prompt();
+            var y=document.getElementsByTagName("li");
+            for(var i=0;i<4;i++)
+                y[i].innerHTML=x;
+           }
+       </script>
+    </body>
+</html>

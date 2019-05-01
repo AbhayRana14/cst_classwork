@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <button onclick="func()">Underline</button>
+        <button onclick="func2()">Normal</button>
+        <script>
+        function func(){
+            var x = document.getElementsByTagName("li");
+            for(var i=0;i<5;i++)
+            x[i].style.textDecoration="underline";
+        }
+        function func2(){
+            var x = document.getElementsByTagName("li");
+            for(var i=0;i<5;i++)
+            x[i].style.textDecoration="none";
+        }
+        </script>
+    </body>
+</html>

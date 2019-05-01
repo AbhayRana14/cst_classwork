@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>question1</title>
+</head>
+<body>
+First Number
+<input type="text" id="first" ><br>
+Second Number
+<input type="text" id="second"><br>
+
+Operation Performed<select id="op">
+    <option name="addition">addition</option>
+    <option name="Subtraction">Subtraction</option>
+    <option name="multiplication">multiplication</option>
+    <option name="division">division</option>
+    <option name="modulus">modulus</option>
+</select><button type="button" onclick="f2()">Calculate</button>
+
+<script>
+    function f2() {
+        var f=parseInt(document.getElementById('first').value);
+        var s=parseInt(document.getElementById('second').value);
+        var c=document.getElementById('op').value;
+
+
+        switch(c)
+        {
+            case 'addition':
+                window.alert(f+s);
+                break;
+            case 'Subtraction':
+                window.alert(f-s);
+                break;
+            case 'multiplication':
+                window.alert(f*s);
+                break;
+            case 'division':
+                window.alert(f/s);
+                break;
+            case 'modulus':
+                window.alert(f%s);
+                break;
+            default:
+                window.alert("Invalid");
+
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

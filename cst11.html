@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form validation 2</title>
+</head>
+<body>
+
+<form name="f4" onsubmit="f5()">
+    <pre>
+    Name:       <input type="text" name="fname"><br>
+    Password:   <input type="text" name="pass"><br>
+    Age:        <select>
+                <option>1 year old</option>
+                <option>2 year old </option>
+                </select><br>
+    Language:   <input type="checkbox">C<br>
+                <input type="checkbox">C++<br>
+    Instruction:<textarea></textarea>
+                <input type="submit"><input type="reset">
+</pre>
+</form>
+
+<script>
+
+    function f5() {
+
+        var x=document.f4.fname.value;
+        var y=document.f4.pass.value;
+
+        if( x==""|| x.length>12||x.length<6)
+        {
+            alert("name should lie in 6-12 length");
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>

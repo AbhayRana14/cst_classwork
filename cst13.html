@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>This is first image</p>
+<img src="Logo-Image-CS-GO-wallpaper-HD-2.jpg" id="1" height="200" width="300px">
+<p>This is second image</p>
+<img src="2.jpg" id="2" height="200" width="300px">
+<p>This is third image</p>
+<img src="your_name.jpg" id="3" height="200" width="300px">
+<p>This is last image</p>
+<img src="logo.jpg" id="4" height="200" width="200"><br>
+<button onclick="func()">100x100</button>
+<button onclick="normal()">Normal</button>
+<script>
+    function func(){
+        for(var i=1;i<=4;i++){
+            document.getElementById(i).height="100";
+            document.getElementById(i).width="100";
+        }
+    }
+    function normal(){
+        for(var i=1;i<=4;i++){
+            document.getElementById(i).height="200";
+            document.getElementById(i).width="300";
+        }
+    }
+</script>
+
+</body>
+</html>

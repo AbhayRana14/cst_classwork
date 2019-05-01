@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <img src="1.jpg" width="400" height="400" id="1">
+        <img src="2.jpg" width="400" height="400" id="2"><br>
+        <button onclick="func()">Interchange</button>
+        <script>
+        var flag=0;
+        function func(){
+            if(flag==0){
+            document.getElementById("1").src="2.jpg";
+            document.getElementById("2").src="1.jpg";
+            flag=1;
+            }else{
+                document.getElementById("1").src="1.jpg";
+                document.getElementById("2").src="2.jpg";
+                flag=0; 
+            }
+        }
+        </script>
+    </body>
+</html>

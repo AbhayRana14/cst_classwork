@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Question 2</h1>
+        <img src="1.jpg" id="1" height="400" width="400"><br>
+        <button onclick="change()">Change Image</button>
+        <button onclick="defaultimg()">Default image</button>
+        <h1>Question 3</h1>
+        <p id="para">This is the paragraph by default align left now click on the button and it will be aligned to the right</p>
+        <button onclick="ralign()">Right Align</button>
+        <button onclick="lalign()">Left Align</button>
+        <button onclick="calign()">Center Align</button>
+        <script>
+        function change(){
+            document.getElementById("1").src="2.jpg";
+        }
+        function defaultimg(){
+            document.getElementById("1").src="1.jpg";
+        }
+        function ralign(){
+            document.getElementById("para").style.textAlign="right";
+        }
+        function lalign(){
+            document.getElementById("para").style.textAlign="left";
+        }
+        function calign(){
+            document.getElementById("para").style.textAlign="center";
+        }
+        </script>
+    </body>
+</html>
